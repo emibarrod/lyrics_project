@@ -43,6 +43,9 @@ def get_song_data_from_url(url):
     if album!="":
         album = cleaning.album(album)
     
+    artist = " ".join(artist.split(" ")[:-1])
+
+    
     data = {
         'title': title,
         'artist': artist,
